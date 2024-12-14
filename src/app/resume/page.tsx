@@ -3,12 +3,11 @@ import React from 'react';
 const Page = () => {
     return (
         <main className='flex justify-center items-center h-screen'>
-            <embed
+            <iframe
                 src='/resume.pdf'
-                type={'application/pdf'}
-                width='100%'
-                height='100%'
-            />
+                className='w-full h-full border-0'
+                title='resume'
+            ></iframe>
         </main>
     );
 };
