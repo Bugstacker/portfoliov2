@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import React from "react";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -24,11 +25,19 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {children}
-      </body>
+    <body
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-slate-900 text-slate-400 relative scroll-smooth`}
+        style={{backgroundColor: "radial-gradient(600px at 705px 505px, rgba(29, 78, 216, 0.15), transparent 80%)"}}
+    >
+    <div
+        className="absolute inset-0 pointer-events-none"
+        style={{
+            background: "radial-gradient(500px at 50% 20%, rgba(29, 78, 216, 0.2), transparent 70%)",
+            zIndex: -1,
+        }}
+    ></div>
+    {children}
+    </body>
     </html>
   );
 }
