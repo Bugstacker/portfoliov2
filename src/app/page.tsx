@@ -21,19 +21,19 @@ export default function Home() {
                         <Navbar />
                     </div>
                     <section className="flex mt-6 w-1/2 gap-4">
-                        <a href="#" target='_blank' referrerPolicy='no-referrer'>
+                        <a href="https://github.com/Bugstacker" target='_blank' referrerPolicy='no-referrer'>
                             <IoLogoGithub className='w-8 h-8 hover:text-slate-100'/>
                         </a>
-                        <a href="#"  target='_blank' referrerPolicy='no-referrer'>
+                        <a href="https://www.linkedin/in/kenneth-matovu"  target='_blank' referrerPolicy='no-referrer'>
                         <RiLinkedinBoxLine className='w-8 h-8 hover:text-slate-100'/>
                         </a>
-                        <a href="#" target='_blank' referrerPolicy='no-referrer'>
+                        <a href="https://www.instagram.com/emaky_sr" target='_blank' referrerPolicy='no-referrer'>
                             <IoLogoInstagram className='w-8 h-8 hover:text-slate-100'/>
                         </a>
-                        <a href="#" target='_blank' referrerPolicy='no-referrer'>
+                        <a href="https://wa.me/+256752001253" target='_blank' referrerPolicy='no-referrer'>
                             <IoLogoWhatsapp className='w-8 h-8 hover:text-slate-100'/>
                         </a>
-                        <a href="#" target='_blank' referrerPolicy='no-referrer'>
+                        <a href="https://x.com/emkaysr" target='_blank' referrerPolicy='no-referrer'>
                             <IoLogoTwitter className='w-8 h-8 hover:text-slate-100'/>
                         </a>
                     </section>
