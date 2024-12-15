@@ -5,11 +5,13 @@ import Form from "next/form";
 import { enquiry } from "@/app/actions";
 import {IoCheckmarkCircleOutline} from "react-icons/io5";
 import {RxCrossCircled} from "react-icons/rx";
+import {Viewport} from "next";
 
-export const viewport = {
-    width: 1,
-    content: 'width=device-width, initial-scale=1.0',
-    userScalable: 'no',
+export const viewport: Viewport = {
+    width: 'device-width',
+    initialScale: 1,
+    maximumScale: 1,
+    userScalable: false,
 }
 
 const ContactForm = () => {
@@ -69,7 +71,7 @@ const ContactForm = () => {
                 </div>
                 
                 <button type='submit'
-                        className='bg-emerald-800 transition-colors ease-in hover:bg-emerald-100 hover:text-emerald-800 w-1/4 uppercase text-emerald-100 font-bold py-2 px-4 rounded text-center disabled:opacity-50'
+                        className='bg-emerald-800 transition-colors ease-in hover:bg-emerald-100 hover:text-emerald-800 w-full sm:w-1/4 uppercase text-emerald-100 font-bold py-2 px-4 rounded text-center disabled:opacity-50'
                         disabled={isPending}
                 >{isPending ? 'Sending...' : 'Send'}</button>
             </Form>}
