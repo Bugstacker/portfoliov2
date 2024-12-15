@@ -11,7 +11,7 @@ type BlogProps = {
 
 const Blog = ({title, thumbnail, year, href}: BlogProps) => {
     return (
-        <a href={href} className='flex gap-4 items-center sm:grid grid-cols-[25%_1fr]'>
+        <a href={href} target='_blank' className='flex gap-4 items-center sm:grid grid-cols-[25%_1fr]'>
             {thumbnail && title &&
                 <>
                     <Image src={thumbnail} alt={title}

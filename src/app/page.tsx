@@ -10,6 +10,7 @@ import ContactForm from "@/components/contact-form";
 
 
 export default function Home() {
+    const url = process.env.NEXT_PUBLIC_VERCEL_URL ? 'https://' + process.env.NEXT_PUBLIC_VERCEL_URL : 'http://localhost:3000'
     return (
         <div className="grid grid-rows-[auto_1fr] lg:grid-rows-[auto_auto_auto] min-h-screen px-6 pb-20 gap-16 sm:p-20 lg:p-0 lg:flex max-w-screen-xl mx-auto">
             <aside className='lg:sticky lg:h-screen lg:overflow-hidden lg:top-0 lg:w-[40%] lg:py-24'>
@@ -95,7 +96,7 @@ export default function Home() {
                     />
                 </section>
                 
-                <Link href='/resume' className='flex font-[family-name:var(--font-geist-mono)] items-center gap-2 text-slate-300 font-semibold'>View Full
+                <Link href={`${url}/resume.pdf`} className='flex font-[family-name:var(--font-geist-mono)] items-center gap-2 text-slate-300 font-semibold'>View Full
                     Resume <FaArrowUpRightFromSquare/>
                 </Link>
                 
@@ -105,14 +106,14 @@ export default function Home() {
                         title='Resi Staffing & Services Web App'
                         href='https://resistaffingandservices.co.uk'
                         description='A platform that connects job seekers with employers in the hospitality industry.'
-                        thumbnail='https://placehold.co/600x400@3x.png'
+                        thumbnail='/rss.png'
                     />
                     
                     <Project
                         title='Mina Care Services Website'
                         href='https://minacareservices.co.uk'
                         description='A website that showcases the services offered by Mina Care Services.'
-                        thumbnail='https://placehold.co/600x400@3x.png'
+                        thumbnail='/mina-care.png'
                     />
                     
                     <Link href='#'
@@ -123,9 +124,10 @@ export default function Home() {
                 <section className='space-y-8'>
                     <h3 className='text-slate-200 font-bold text-xl pt-10 font-[family-name:var(--font-geist-mono)]'>WRITING</h3>
                     <Blog
-                        thumbnail='https://placehold.co/600x400@3x.png'
+                        thumbnail='/blog1.png'
                         title='How to Learn Web Development'
                         year='2023'
+                        href='https://medium.com/@emkaysr/unlocking-success-in-web-development-tips-for-aspiring-developers-e55d33928eb4'
                     />
                 </section>
                 
