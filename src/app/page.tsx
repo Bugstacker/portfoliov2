@@ -95,7 +95,7 @@ export default function Home() {
                     />
                 </section>
                 
-                <Link href='/resume' className='flex items-center gap-2 text-lg text-slate-100 font-semibold'>View Full
+                <Link href='/resume' className='flex font-[family-name:var(--font-geist-mono)] items-center gap-2 text-slate-300 font-semibold'>View Full
                     Resume <FaArrowUpRightFromSquare/>
                 </Link>
                 
