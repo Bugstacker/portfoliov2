@@ -13,7 +13,7 @@ const Project = ({title, description, thumbnail, href}: ProjectProps) => {
     return (
         <article className='gap-2 grid sm:grid-cols-[25%_1fr]'>
             <div className='space-y-2 sm:order-2'>
-                <a href={href} target='_blank' className='text-slate-100 font-bold flex gap-2 items-center'>{title}
+                <a href={href} target='_blank' className='text-slate-100 font-[family-name:var(--font-geist-mono)] font-bold flex gap-2 items-center'>{title}
                     <FaArrowUpRightFromSquare/></a>
                 <p>{description}</p>
             </div>

@@ -26,7 +26,7 @@ const Blog = ({title, thumbnail, year, href}: BlogProps) => {
             }
             <div>
                 <p className='font-bold text-slate-400'>{year}</p>
-                <p className='text-slate-100 font-bold flex gap-2 items-center'>{title} <FaArrowUpRightFromSquare/></p>
+                <p className='text-slate-100 font-bold flex gap-2 font-[family-name:var(--font-geist-mono)] items-center'>{title} <FaArrowUpRightFromSquare/></p>
             </div>
         </a>
     );
