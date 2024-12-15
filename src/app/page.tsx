@@ -1,23 +1,23 @@
 import {IoLogoGithub, IoLogoInstagram, IoLogoTwitter, IoLogoWhatsapp} from "react-icons/io5";
 import { RiLinkedinBoxLine } from "react-icons/ri";
 import { FaArrowUpRightFromSquare } from "react-icons/fa6";
-import React from "react";
 import Experience from "@/components/experience";
 import Project from "@/components/project";
 import Link from "next/link";
 import Blog from "@/components/blog";
 import Navbar from "@/components/navbar";
+import ContactForm from "@/components/contact-form";
 
 
 export default function Home() {
     return (
-        <div className="grid grid-rows-[auto_1fr] lg:grid-rows-[auto_auto_auto] min-h-screen px-6 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)] lg:p-0 lg:flex max-w-screen-xl mx-auto">
+        <div className="grid grid-rows-[auto_1fr] lg:grid-rows-[auto_auto_auto] min-h-screen px-6 pb-20 gap-16 sm:p-20 lg:p-0 lg:flex max-w-screen-xl mx-auto">
             <aside className='lg:sticky lg:h-screen lg:overflow-hidden lg:top-0 lg:w-[40%] lg:py-24'>
                 <header className='pt-10 lg:pt-0 lg:h-full lg:flex lg:flex-col lg:justify-between'>
                     <div>
-                        <h1 className='text-slate-100 font-bold text-4xl'>Kenneth Matovu</h1>
-                        <h2 className='text-slate-300 text-xl font-semibold py-2'>Fullstack Engineer</h2>
-                        <p className='mt-2 w-1/2'>I build accessible, pixel-perfect digital experiences for the web.</p>
+                        <h1 className='text-slate-100 font-black tracking-wide sm:tracking-wider lg:tracking-widest text-4xl sm:text-5xl md:text-6xl font-[family-name:var(--font-geist-mono)]'>Kenneth Matovu</h1>
+                        <h2 className='text-slate-300 font-[family-name:var(--font-geist-mono)] text-lg font-semibold py-2 sm:text-xl md:text-2xl'>Fullstack Software Engineer</h2>
+                        <p className='mt-2 w-1/2 lg:w-2/3'>I build accessible, pixel-perfect digital experiences for the web.</p>
                         <Navbar />
                     </div>
                     <section className="flex mt-6 w-1/2 gap-4">
@@ -42,7 +42,7 @@ export default function Home() {
             
             <main className="flex flex-col gap-8 row-start-2 lg:w-[60%] lg:overflow-y-auto lg:py-24">
                 <section id='about' className='grid gap-4'>
-                    <h3 className='text-slate-100 font-bold text-xl lg:mt-0 mt-10'>ABOUT</h3>
+                    <h3 className='text-slate-100 font-bold text-xl lg:mt-0 mt-10 font-[family-name:var(--font-geist-mono)]'>ABOUT</h3>
                     <article className='mt-5'>
                         I&apos;m a developer passionate about crafting accessible, pixel-perfect user interfaces that
                         blend thoughtful design with robust engineering. My favorite work lies at the intersection of
@@ -73,7 +73,7 @@ export default function Home() {
                         stacks, hanging out with my friends.</p>
                 </section>
                 <section id='experience' className='space-y-10'>
-                    <h2 className='text-slate-100 font-bold text-xl pt-10'>EXPERIENCE</h2>
+                    <h2 className='text-slate-100 font-bold text-xl pt-10 font-[family-name:var(--font-geist-mono)]'>EXPERIENCE</h2>
                     <Experience
                         duration='2024 -- PRESENT'
                         title='Full-Stack Developer, Resi Staffing & Services Ltd'
@@ -90,7 +90,7 @@ export default function Home() {
                     <Experience
                         duration='2022 -- 2023'
                         title='Software Developer, Sonador Motors Co., Ltd'
-                        description='Created social media pages, Browser profiles and the first version of the website. Inaddition, I geared the advertising campaigns which saw a 100% increase in the enquiry rate thus improving sales by 80%, Created other apps which am also still maintaining like the <span className="text-slate-100">Invoice Generator App</span> which generates 4 invoices for the company, which it requires for use on a daily basis.'
+                        description='Created social media pages, Browser profiles and the first version of the website. Inaddition, I geared the advertising campaigns which saw a 100% increase in the enquiry rate thus improving sales by 80%, Created other apps which am also still maintaining like the Invoice Generator App which generates 4 invoices for the company, which it requires for use on a daily basis.'
                         techStack={['React', 'NextJs', 'Tailwind CSS', 'Javascript', 'HTML & CSS', 'Django', 'Python', 'Amazon S3', 'Amazon RDS', 'REST API']}
                     />
                 </section>
@@ -100,7 +100,7 @@ export default function Home() {
                 </Link>
                 
                 <section id='projects' className='space-y-8'>
-                    <h3 className='text-slate-100 font-bold text-xl pt-10'>PROJECTS</h3>
+                    <h3 className='text-slate-100 font-bold text-xl pt-10 font-[family-name:var(--font-geist-mono)]'>PROJECTS</h3>
                     <Project
                         title='Resi Staffing & Services Web App'
                         href='https://resistaffingandservices.co.uk'
@@ -121,7 +121,7 @@ export default function Home() {
                 </section>
                 
                 <section className='space-y-8'>
-                    <h3 className='text-slate-200 font-bold text-xl pt-10'>WRITING</h3>
+                    <h3 className='text-slate-200 font-bold text-xl pt-10 font-[family-name:var(--font-geist-mono)]'>WRITING</h3>
                     <Blog
                         thumbnail='https://placehold.co/600x400@3x.png'
                         title='How to Learn Web Development'
@@ -129,7 +129,9 @@ export default function Home() {
                     />
                 </section>
                 
-                <footer className='max-w-md'>
+                <ContactForm />
+                
+                <footer className='text-sm border-y p-2 border-slate-700'>
                     <p>Loosely designed in <span className='text-slate-200'>Figma</span> and coded in <span
                         className='text-slate-100'>Webstorm</span> by yours truly. Built in <span
                         className='text-slate-100'>Next.js</span> and <span
