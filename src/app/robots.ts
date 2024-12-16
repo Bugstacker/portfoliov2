@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
             disallow: '/admin/',
             userAgent: ['*'],
         },
-        sitemap: `https://${process.env.NEXT_PUBLIC_VERCEL_URL}/sitemap.xml`,
+        sitemap: `https://kennethmatovu.vercel.app/sitemap.xml`,
     }
 }
