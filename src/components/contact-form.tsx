@@ -5,14 +5,6 @@ import Form from "next/form";
 import { enquiry } from "@/app/actions";
 import {IoCheckmarkCircleOutline} from "react-icons/io5";
 import {RxCrossCircled} from "react-icons/rx";
-import {Viewport} from "next";
-
-export const viewport: Viewport = {
-    width: 'device-width',
-    initialScale: 1,
-    maximumScale: 1,
-    userScalable: false,
-}
 
 const ContactForm = () => {
     const [data, action, isPending] = useActionState(enquiry, null);
@@ -36,7 +28,7 @@ const ContactForm = () => {
 
     
     return (
-        <section id='#contact' className='transition-all ease-in'>
+        <section id='#contact' className='transition-all ease-in grid gap-2'>
             <h2 className='text-2xl uppercase my-10 font-bold font-[family-name:var(--font-geist-mono)] text-slate-100'>Contact Form</h2>
             {!data?.success && <Form action={action} className='grid gap-4 w-full'>
                 <div className='grid gap-2'>

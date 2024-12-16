@@ -60,13 +60,13 @@ export async function enquiry(prevState: unknown, formData: FormData) {
                                         <tr>
                                             <td style="padding: 20px;">
                                                 <p style="font-family: 'Geist Sans', Arial, sans-serif; color: #e5e7eb; margin: 0 0 15px 0; font-size: 15px;">
-                                                    <strong style="color: #10b981; font-family: 'Geist Sans', Arial, sans-serif;">Name:</strong> ${name}
+                                                    <strong style="color: #065f46; font-family: 'Geist Sans', Arial, sans-serif;">Name:</strong> ${name}
                                                 </p>
                                                 <p style="font-family: 'Geist Sans', Arial, sans-serif; color: #e5e7eb; margin: 0 0 15px 0; font-size: 15px;">
-                                                    <strong style="color: #10b981; font-family: 'Geist Sans', Arial, sans-serif;">Email:</strong> ${email}
+                                                    <strong style="color: #065f46; font-family: 'Geist Sans', Arial, sans-serif;">Email:</strong> ${email}
                                                 </p>
                                                 <p style="font-family: 'Geist Mono', monospace; color: #e5e7eb; margin: 0; font-size: 15px;">
-                                                    <strong style="color: #10b981; font-family: 'Geist Sans', Arial, sans-serif;">Message:</strong><br>
+                                                    <strong style="color: #065f46; font-family: 'Geist Sans', Arial, sans-serif;">Message:</strong><br>
                                                     ${message}
                                                 </p>
                                             </td>
@@ -94,10 +94,10 @@ export async function enquiry(prevState: unknown, formData: FormData) {
     `
     
     const options = {
-        from: 'geoffrey.huel@ethereal.email',
-        to: 'geoffrey.huel@ethereal.email',
+        from: process.env.EMAIL,
+        to: process.env.TO_EMAIL,
         replyTo: email,
-        subject: 'New Website Enquiry',
+        subject: 'New Porfolio Website Enquiry',
         html: emailHtml
     }
     
@@ -105,8 +105,8 @@ export async function enquiry(prevState: unknown, formData: FormData) {
         const info = await transporter.sendMail(options);
         const success = info.accepted.length > 0;
         return { success, message: success ? 'Enquiry sent successfully, I reach out to you as soon as I can.' : 'Failed to send enquiry, Please Try Again' }
-    } catch (e) {
-        console.error(e);
+    } catch (_) {
+        console.error('Error Occurred: ', _);
         return { success: false, message: 'Failed to send enquiry, Please Try Again' }
     }
     
