@@ -28,7 +28,7 @@ const ContactForm = () => {
 
     
     return (
-        <section id='#contact' className='transition-all ease-in grid gap-2'>
+        <section id='contact' className='transition-all ease-in grid gap-2'>
             <h2 className='text-2xl uppercase my-10 font-bold font-[family-name:var(--font-geist-mono)] text-slate-100'>Contact Form</h2>
             {!data?.success && <Form action={action} className='grid gap-4 w-full'>
                 <div className='grid gap-2'>
@@ -63,7 +63,7 @@ const ContactForm = () => {
                 </div>
                 
                 <button type='submit'
-                        className='bg-emerald-800 transition-colors ease-in hover:bg-emerald-100 hover:text-emerald-800 w-full sm:w-1/4 uppercase text-emerald-100 font-bold py-2 px-4 rounded text-center disabled:opacity-50'
+                        className='bg-emerald-800 transition-colors ease-in sm:hover:bg-emerald-100 sm:hover:text-emerald-800 w-full sm:w-1/4 uppercase text-emerald-100 font-bold py-2 px-4 rounded text-center disabled:opacity-50'
                         disabled={isPending}
                 >{isPending ? 'Sending...' : 'Send'}</button>
             </Form>}
