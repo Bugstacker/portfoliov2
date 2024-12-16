@@ -12,7 +12,7 @@ import ContactForm from "@/components/contact-form";
 export default function Home() {
     const url = process.env.NEXT_PUBLIC_VERCEL_URL ? 'https://' + process.env.NEXT_PUBLIC_VERCEL_URL : 'http://localhost:3000'
     return (
-        <div className="grid grid-rows-[auto_1fr] lg:grid-rows-[auto_auto_auto] min-h-screen px-6 pb-20 gap-16 sm:p-20 lg:p-0 lg:flex max-w-screen-xl mx-auto lg:transition-all lg:ease-in">
+        <div className="grid grid-rows-[auto_1fr] lg:grid-rows-[auto_auto_auto] min-h-screen px-6 pb-10 gap-16 sm:p-20 lg:p-0 lg:flex max-w-screen-xl mx-auto lg:transition-all lg:ease-in">
             <aside className='lg:sticky lg:h-screen lg:overflow-hidden lg:top-0 lg:w-[40%] lg:py-24'>
                 <header className='pt-10 lg:pt-0 lg:h-full lg:flex lg:flex-col lg:justify-between'>
                     <div>
