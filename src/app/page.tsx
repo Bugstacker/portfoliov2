@@ -41,9 +41,9 @@ export default function Home() {
                 </header>
             </aside>
             
-            <main className="flex flex-col gap-8 row-start-2 lg:w-[60%] lg:overflow-y-auto lg:py-24">
+            <main className="flex flex-col gap-8 row-start-2 lg:w-[60%] lg:overflow-y-auto lg:pb-24">
                 <section id='about' className='grid gap-4'>
-                    <h3 className='text-slate-100 font-bold text-xl lg:mt-0 mt-10 font-[family-name:var(--font-geist-mono)]'>ABOUT</h3>
+                    <h3 className='text-slate-100 font-bold text-xl lg:mt-0 mt-10 font-[family-name:var(--font-geist-mono)] lg:pt-24'>ABOUT</h3>
                     <article className='mt-5'>
                         I&apos;m a developer passionate about crafting accessible, pixel-perfect user interfaces that
                         blend thoughtful design with robust engineering howeer even more passionate about Cyber Security since I have a background in Digital Forensics & Criminal Investigation. My favorite work lies at the intersection of
