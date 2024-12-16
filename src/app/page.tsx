@@ -25,7 +25,7 @@ export default function Home() {
                         <a href="https://github.com/Bugstacker" target='_blank' referrerPolicy='no-referrer'>
                             <IoLogoGithub className='w-8 h-8 hover:text-slate-100'/>
                         </a>
-                        <a href="https://www.linkedin/in/kenneth-matovu"  target='_blank' referrerPolicy='no-referrer'>
+                        <a href="https://www.linkedin.com/in/kenneth-matovu/"  target='_blank' referrerPolicy='no-referrer'>
                         <RiLinkedinBoxLine className='w-8 h-8 hover:text-slate-100'/>
                         </a>
                         <a href="https://www.instagram.com/emaky_sr" target='_blank' referrerPolicy='no-referrer'>
