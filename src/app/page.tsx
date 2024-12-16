@@ -10,7 +10,7 @@ import ContactForm from "@/components/contact-form";
 
 
 export default function Home() {
-    const url = process.env.NEXT_PUBLIC_VERCEL_URL ? 'https://' + process.env.NEXT_PUBLIC_VERCEL_URL : 'http://localhost:3000'
+    const url = process.env.NEXT_PUBLIC_VERCEL_URL ? 'https://kennethmatovu.vercel.app' : 'http://localhost:3000'
     return (
         <div className="grid grid-rows-[auto_1fr] lg:grid-rows-[auto_auto_auto] min-h-screen px-6 pb-10 gap-16 sm:p-20 lg:p-0 lg:flex max-w-screen-xl mx-auto lg:transition-all lg:ease-in">
             <aside className='lg:sticky lg:h-screen lg:overflow-hidden lg:top-0 lg:w-[40%] lg:py-24'>
@@ -25,7 +25,7 @@ export default function Home() {
                         <a href="https://github.com/Bugstacker" target='_blank' referrerPolicy='no-referrer'>
                             <IoLogoGithub className='w-8 h-8 hover:text-slate-100'/>
                         </a>
-                        <a href="https://www.linkedin/in/kenneth-matovu"  target='_blank' referrerPolicy='no-referrer'>
+                        <a href="https://www.linkedin.com/in/kenneth-matovu/"  target='_blank' referrerPolicy='no-referrer'>
                         <RiLinkedinBoxLine className='w-8 h-8 hover:text-slate-100'/>
                         </a>
                         <a href="https://www.instagram.com/emaky_sr" target='_blank' referrerPolicy='no-referrer'>
@@ -95,7 +95,7 @@ export default function Home() {
                     />
                 </section>
                 
-                <Link href={`${url}/resume.pdf`} className='flex font-[family-name:var(--font-geist-mono)] items-center gap-2 text-slate-300 font-semibold'>View Full
+                <Link href={url} className='flex font-[family-name:var(--font-geist-mono)] items-center gap-2 text-slate-300 font-semibold'>View Full
                     Resume <FaArrowUpRightFromSquare/>
                 </Link>
                 

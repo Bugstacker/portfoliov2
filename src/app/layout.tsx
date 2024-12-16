@@ -66,7 +66,7 @@ export default function RootLayout({
   return (
     <html lang="en">
     <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-slate-900 text-slate-400 scroll-smooth font-[font-family:var(--font-geist-sans)]`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-slate-900 text-slate-400 scroll-smooth font-[font-family:var(--font-geist-sans)] flex items-center justify-center min-h-screen`}
     >
       <CursorEffectLayout>
         {children}
