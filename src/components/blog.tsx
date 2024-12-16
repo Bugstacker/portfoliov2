@@ -15,7 +15,7 @@ const Blog = ({title, thumbnail, year, href}: BlogProps) => {
             {thumbnail && title &&
                 <>
                     <Image src={thumbnail} alt={title}
-                           width={100} height={50}
+                           width={100} height={80}
                            className='rounded object-cover sm:hidden'
                     />
                     <Image src={thumbnail} alt={title}
@@ -24,7 +24,7 @@ const Blog = ({title, thumbnail, year, href}: BlogProps) => {
                     />
                 </>
             }
-            <div>
+            <div className='text-xs sm:text-base'>
                 <p className='font-bold text-slate-400'>{year}</p>
                 <p className='text-slate-100 font-bold flex gap-2 font-[family-name:var(--font-geist-mono)] items-center'>{title} <FaArrowUpRightFromSquare/></p>
             </div>
