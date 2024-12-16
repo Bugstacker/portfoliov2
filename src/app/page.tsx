@@ -12,7 +12,7 @@ import ContactForm from "@/components/contact-form";
 export default function Home() {
     const url = process.env.NEXT_PUBLIC_VERCEL_URL ? 'https://' + process.env.NEXT_PUBLIC_VERCEL_URL : 'http://localhost:3000'
     return (
-        <div className="grid grid-rows-[auto_1fr] lg:grid-rows-[auto_auto_auto] min-h-screen px-6 pb-20 gap-16 sm:p-20 lg:p-0 lg:flex max-w-screen-xl mx-auto">
+        <div className="grid grid-rows-[auto_1fr] lg:grid-rows-[auto_auto_auto] min-h-screen px-6 pb-10 gap-16 sm:p-20 lg:p-0 lg:flex max-w-screen-xl mx-auto lg:transition-all lg:ease-in">
             <aside className='lg:sticky lg:h-screen lg:overflow-hidden lg:top-0 lg:w-[40%] lg:py-24'>
                 <header className='pt-10 lg:pt-0 lg:h-full lg:flex lg:flex-col lg:justify-between'>
                     <div>
@@ -41,16 +41,15 @@ export default function Home() {
                 </header>
             </aside>
             
-            <main className="flex flex-col gap-8 row-start-2 lg:w-[60%] lg:overflow-y-auto lg:py-24">
+            <main className="flex flex-col gap-8 row-start-2 lg:w-[60%] lg:overflow-y-auto lg:pb-24">
                 <section id='about' className='grid gap-4'>
-                    <h3 className='text-slate-100 font-bold text-xl lg:mt-0 mt-10 font-[family-name:var(--font-geist-mono)]'>ABOUT</h3>
+                    <h3 className='text-slate-100 font-bold text-xl lg:mt-0 mt-10 font-[family-name:var(--font-geist-mono)] lg:pt-24'>ABOUT</h3>
                     <article className='mt-5'>
                         I&apos;m a developer passionate about crafting accessible, pixel-perfect user interfaces that
-                        blend thoughtful design with robust engineering. My favorite work lies at the intersection of
+                        blend thoughtful design with robust engineering howeer even more passionate about Cyber Security since I have a background in Digital Forensics & Criminal Investigation. My favorite work lies at the intersection of
                         design and development, creating experiences that not only look great but are meticulously built
-                        for performance and usability.
+                        for performance and usability. 
                     </article>
-                    
                     <article>
                         Currently, I&apos;m a <span className='text-slate-100 font-semibold'>freelance</span> full-stack
                         developer, specializing in building web apps custom tailored to the business needs, vision and
@@ -70,7 +69,7 @@ export default function Home() {
                         web apps with all I wished I knew which could&apos;ve saved me some good amount of time.
                     </article>
                     
-                    <p>In my spare time, I&apos;m usually playing billiards 🎱, making technology research / Learning new
+                    <p>In my spare time, I&apos;m usually playing billiards, making technology research / Learning new
                         stacks, hanging out with my friends.</p>
                 </section>
                 <section id='experience' className='space-y-10'>

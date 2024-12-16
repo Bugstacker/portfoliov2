@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import React from "react";
 import {Viewport} from "next";
+import CursorEffectLayout from "@/components/cursor-effect";
 
 
 const geistSans = Geist({
@@ -65,17 +66,11 @@ export default function RootLayout({
   return (
     <html lang="en">
     <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-slate-900 text-slate-400 relative scroll-smooth font-[font-family:var(--font-geist-sans)]`}
-        style={{backgroundColor: "radial-gradient(600px at 705px 505px, rgba(29, 78, 216, 0.15), transparent 80%)"}}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-slate-900 text-slate-400 scroll-smooth font-[font-family:var(--font-geist-sans)]`}
     >
-    <div
-        className="absolute inset-0 pointer-events-none"
-        style={{
-            background: "radial-gradient(500px at 50% 20%, rgba(29, 78, 216, 0.2), transparent 70%)",
-            zIndex: -1,
-        }}
-    ></div>
-    {children}
+      <CursorEffectLayout>
+        {children}
+    </CursorEffectLayout>
     </body>
     </html>
   );
