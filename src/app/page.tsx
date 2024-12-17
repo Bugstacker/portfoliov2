@@ -77,7 +77,7 @@ export default function Home() {
                     <Experience
                         duration='2024 -- PRESENT'
                         title='Full-Stack Developer, Resi Staffing & Services Ltd'
-                        description='Build and maintain critical web apps use dto construct RSS&apos;s frontend and backend. Work closely with the client, to create an application which align with the business goals & vision, and advocate for best practices in web accessibility.'
+                        description='Build and maintain critical web components used to construct Resi Staffing & Services&apos; frontend and backend. Work closely with the client, to create an application which align with the business goals & vision, and advocate for best practices in web accessibility.'
                         techStack={['TypeScript', 'NextJS', 'Tailwind CSS', 'React', 'HTML & CSS']}
                     />
                     <Experience
