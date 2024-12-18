@@ -110,7 +110,7 @@ export default function Home() {
                     
                     <Project
                         title='Mina Care Services Website'
-                        href='https://minacareservices.co.uk'
+                        href='https://mina-care-services.co.uk'
                         description='A website that showcases the services offered by Mina Care Services.'
                         thumbnail='/mina-care.png'
                     />
