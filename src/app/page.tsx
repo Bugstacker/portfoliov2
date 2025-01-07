@@ -138,7 +138,7 @@ export default function Home() {
                         className='text-slate-100'>Next.js</span> and <span
                         className='text-slate-100'>Tailwind CSS</span> with <span
                         className='text-slate-100'>TypeScript</span>, deployed with <span
-                        className='text-slate-100'>Vercel.</span>All text is set to GeistMono typeface</p>
+                        className='text-slate-100'>Vercel.</span>All text is set to GeistSans typeface</p>
                 </footer>
             </main>
         </div>
