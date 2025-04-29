@@ -4,6 +4,7 @@ import "./globals.css";
 import React from "react";
 import {Viewport} from "next";
 import CursorEffectLayout from "@/components/cursor-effect";
+import { Analytics } from "@vercel/analytics/react"
 
 
 const geistSans = Geist({
@@ -71,6 +72,7 @@ export default function RootLayout({
       <CursorEffectLayout>
         {children}
     </CursorEffectLayout>
+    <Analytics />
     </body>
     </html>
   );
