@@ -50,11 +50,13 @@ export const metadata: Metadata = {
         url: url + '/opengraph-image.png'
     },
     twitter: {
-        site: 'https://kennethmatovu.vercel.app',
+        card: 'summary_large_image',
         title: 'Kenneth Matovu | Software Engineer',
         description: description,
-        card: 'summary_large_image',
-    },
+        creator: '@emkaysr',
+        creatorId: '1467726470533754880',
+        images: [`${url + '/opengraph-image.png'}`], // Must be an absolute URL
+      },
     category: 'Website Development',
 }
 

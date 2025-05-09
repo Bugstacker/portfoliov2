@@ -115,6 +115,13 @@ export default function Home() {
                         thumbnail='/mina-care.png'
                     />
                     
+                    <Project
+                        title='Hillva Honey'
+                        href='https://hillvaandrea.com'
+                        description='Raw honey brand from the Highlands of Rukiga, in western Uganda. Formed by an association of local beekeepers.'
+                        thumbnail='/hillvaandrea.png'
+                    />
+                    
                     {/* Make a link when the projects archive is done */}
                     <p
                           className='flex gap-2 hover:gap-4 hover:border-b w-fit transition-all ease-in border-emerald-500 items-center font-bold text-slate-500'>Full Project Archive Coming Soon <FaArrowUpRightFromSquare/></p>
