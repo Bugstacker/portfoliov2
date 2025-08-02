@@ -65,7 +65,7 @@ const ContactForm = () => {
                 <button type='submit'
                         className='bg-emerald-800 flex items-center justify-center transition-colors ease-in sm:hover:bg-emerald-100 sm:hover:text-emerald-800 w-full sm:w-1/4 uppercase text-emerald-100 font-bold py-2 px-4 rounded text-center disabled:opacity-50'
                         disabled={isPending}
-                >{isPending ? <div className='container'></div> : 'Send'}</button>
+                >{isPending ? 'sending....' : 'Send'}</button>
             </Form>}
             { data && feedback }
         </section>
