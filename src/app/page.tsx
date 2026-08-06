@@ -31,7 +31,7 @@ export default function Home() {
                         <a href="https://www.instagram.com/emaky_sr" target='_blank' referrerPolicy='no-referrer'>
                             <IoLogoInstagram className='w-8 h-8 hover:text-slate-100'/>
                         </a>
-                        <a href="https://wa.me/+256752001253" target='_blank' referrerPolicy='no-referrer'>
+                        <a href="https://wa.me/819018908433" target='_blank' referrerPolicy='no-referrer'>
                             <IoLogoWhatsapp className='w-8 h-8 hover:text-slate-100'/>
                         </a>
                         <a href="https://x.com/emkaysr" target='_blank' referrerPolicy='no-referrer'>
@@ -76,22 +76,23 @@ export default function Home() {
                     <h2 className='text-slate-100 font-bold text-xl pt-10 font-[family-name:var(--font-geist-mono)]'>EXPERIENCE</h2>
                     <Experience
                         duration='2024 -- PRESENT'
+                        title='Software Developer, Sonador Motors Co., Ltd'
+                        description='Created social media pages, Browser profiles and the first version of the website. Inaddition, I geared the advertising campaigns which saw a 100% increase in the enquiry rate thus improving sales by 80%, created other apps which am also still maintaining like the Invoice Generator App which generates 4 invoices for the company, which it requires for use on a daily basis.'
+                        techStack={['React', 'NextJs', 'Tailwind CSS', 'Javascript', 'HTML & CSS', 'Django', 'Python', 'Amazon S3', 'Amazon RDS', 'REST API']}
+                    />
+                    
+                    <Experience
+                        duration='2024 -- 2025'
                         title='Full-Stack Developer, Resi Staffing & Services Ltd'
-                        description='Build and maintain critical web components used to construct Resi Staffing & Services&apos; frontend and backend. Work closely with the client, to create an application which align with the business goals & vision, and advocate for best practices in web accessibility.'
+                        description='Build and maintain critical web components used to construct Resi Staffing & Services&apos; frontend and backend. Working closely with the client, to create an application which align with the business goals & vision, and advocate for best practices in web accessibility.'
                         techStack={['TypeScript', 'NextJS', 'Tailwind CSS', 'React', 'HTML & CSS']}
                     />
+                    
                     <Experience
                         duration='2023 -- 2024'
                         title='Web Developer, Mina Care Services Ltd'
                         description="Build, style, and ship high quality website of the company and digital experiences through creating social media pages, then teaching the staff on how they can manage these pages, as I maintain the website. Increased the company's enquiry rate by 80% through the initiatives to establish a digital presence."
                         techStack={['NextJs', 'Tailwind CSS', 'Javascript', 'Rest API', 'React', 'HTML & CSS']}
-                    />
-                    
-                    <Experience
-                        duration='2022 -- 2023'
-                        title='Software Developer, Sonador Motors Co., Ltd'
-                        description='Created social media pages, Browser profiles and the first version of the website. Inaddition, I geared the advertising campaigns which saw a 100% increase in the enquiry rate thus improving sales by 80%, Created other apps which am also still maintaining like the Invoice Generator App which generates 4 invoices for the company, which it requires for use on a daily basis.'
-                        techStack={['React', 'NextJs', 'Tailwind CSS', 'Javascript', 'HTML & CSS', 'Django', 'Python', 'Amazon S3', 'Amazon RDS', 'REST API']}
                     />
                 </section>
                 
@@ -101,6 +102,18 @@ export default function Home() {
                 
                 <section id='projects' className='space-y-8'>
                     <h3 className='text-slate-100 font-bold text-xl pt-10 font-[family-name:var(--font-geist-mono)]'>PROJECTS</h3>
+                    <Project
+                        title={'Sonador Motors Co., Ltd Website'}
+                        href='https://sonadormotors.jp'
+                        description='A website that showcases stock of cars the company sells worldwide, clients can check the price, calculate shipping costs with other services the company offers.'
+                        thumbnail='/sonador-motors.png'
+                    />
+                    <Project
+                        title={'Sonador Motors Co., Ltd Invoices Generator App'}
+                        href='#'
+                        description='This is a company internal app (*So URL does not redirect*) that generates invoices, packing-lists for the company, which it requires for use on a daily basis.'
+                        thumbnail='/sonador-documents.png'
+                    />
                     <Project
                         title='Resi Staffing & Services Web App'
                         href='https://resistaffingandservices.co.uk'
