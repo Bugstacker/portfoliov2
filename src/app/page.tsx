@@ -31,7 +31,7 @@ export default function Home() {
                         <a href="https://www.instagram.com/emaky_sr" target='_blank' referrerPolicy='no-referrer'>
                             <IoLogoInstagram className='w-8 h-8 hover:text-slate-100'/>
                         </a>
-                        <a href="https://wa.me/+819018908433" target='_blank' referrerPolicy='no-referrer'>
+                        <a href="https://wa.me/819018908433" target='_blank' referrerPolicy='no-referrer'>
                             <IoLogoWhatsapp className='w-8 h-8 hover:text-slate-100'/>
                         </a>
                         <a href="https://x.com/emkaysr" target='_blank' referrerPolicy='no-referrer'>
@@ -77,14 +77,14 @@ export default function Home() {
                     <Experience
                         duration='2024 -- PRESENT'
                         title='Software Developer, Sonador Motors Co., Ltd'
-                        description='Created social media pages, Browser profiles and the first version of the website. Inaddition, I geared the advertising campaigns which saw a 100% increase in the enquiry rate thus improving sales by 80%, Created other apps which am also still maintaining like the Invoice Generator App which generates 4 invoices for the company, which it requires for use on a daily basis.'
+                        description='Created social media pages, Browser profiles and the first version of the website. Inaddition, I geared the advertising campaigns which saw a 100% increase in the enquiry rate thus improving sales by 80%, created other apps which am also still maintaining like the Invoice Generator App which generates 4 invoices for the company, which it requires for use on a daily basis.'
                         techStack={['React', 'NextJs', 'Tailwind CSS', 'Javascript', 'HTML & CSS', 'Django', 'Python', 'Amazon S3', 'Amazon RDS', 'REST API']}
                     />
                     
                     <Experience
                         duration='2024 -- 2025'
                         title='Full-Stack Developer, Resi Staffing & Services Ltd'
-                        description='Build and maintain critical web components used to construct Resi Staffing & Services&apos; frontend and backend. Work closely with the client, to create an application which align with the business goals & vision, and advocate for best practices in web accessibility.'
+                        description='Build and maintain critical web components used to construct Resi Staffing & Services&apos; frontend and backend. Working closely with the client, to create an application which align with the business goals & vision, and advocate for best practices in web accessibility.'
                         techStack={['TypeScript', 'NextJS', 'Tailwind CSS', 'React', 'HTML & CSS']}
                     />
                     
